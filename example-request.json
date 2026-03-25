@@ -1,0 +1,57 @@
+{
+  "input": {
+    "workflow": {
+      "1": {
+        "inputs": {
+          "image": "cyber_genesis.png"
+        },
+        "class_type": "LoadImage",
+        "_meta": {
+          "title": "LoadImage"
+        }
+      },
+      "2": {
+        "inputs": {
+          "filename_prefix": "Qwen_Edit_2511",
+          "images": [
+            "4",
+            0
+          ]
+        },
+        "class_type": "SaveImage",
+        "_meta": {
+          "title": "SaveImage"
+        }
+      },
+      "3": {
+        "inputs": {
+          "value": 24,
+          "image": [
+            "1",
+            0
+          ]
+        },
+        "class_type": "QwenMultiangleCameraNode",
+        "_meta": {
+          "title": "QwenMultiangleCameraNode"
+        }
+      },
+      "4": {
+        "inputs": {
+          "prompt": [
+            "3",
+            0
+          ],
+          "image": [
+            "1",
+            0
+          ]
+        },
+        "class_type": "cc56276d-0572-47e2-986f-060f2362edea",
+        "_meta": {
+          "title": "cc56276d-0572-47e2-986f-060f2362edea"
+        }
+      }
+    }
+  }
+}
